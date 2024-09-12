@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface Plane
  
 </details>
 
@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   NASA Artemis Pagina 
-  <img src="site-screenshot-NASA-2.png" width="375px" alt="Informatie Pagina van de Artemis program van NASA :)">
+  <img src="./site-screenshot-NASA-2.png" width="375px" alt="Informatie Pagina van de Artemis program van NASA :)">
  
 </details>
 
