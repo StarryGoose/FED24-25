@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   NASA site homescreen pagina
-  <img src="./site-screenshot-NASA-1.png" width="375px" alt="Homescreen van De NASA Website">
+  <img src="readme-images/site-screenshot-NASA-1.png" width="375px" alt="Homescreen van De NASA Website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   NASA Artemis Pagina 
