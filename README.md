@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   [link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp](https://www.nasa.gov/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  NASA site homescreen pagina
+  <img src="site-screenshot-NASA-1" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  NASA Artemis Pagina 
+  <img src="site-screenshot-NASA-2" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
