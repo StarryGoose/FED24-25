@@ -14,9 +14,16 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* text */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-text-white:#ffffff;
+	/* Background */
+	--color-background-light:#ffffff;
+	--color-background-dark:#111;
+	/* Accent */
+	--color-accent:#F64137;
+	--color-button-gray:#4E4E4E;
+	--color-Black:#111;
 }
 
 
@@ -28,4 +35,89 @@
 /****************/
 
 /* jouw code */
+body{
+	background-color: var(--color-background-light);
+}
 
+
+h1{
+	color: var(--color-Black);
+}
+
+
+h2{
+ 	color: var(--color-text);
+}
+
+/* Nav bar Styling */
+nav{
+	height:70px;
+	background-color: var(--color-background-dark);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0 2em;
+	position: sticky;
+	top:0;
+}
+
+nav ul{
+	display: flex;
+}
+
+
+nav li{
+	padding: 0 .75em;
+}
+
+
+nav a:focus-visible{
+	border-style: dashed
+}
+
+
+li a {
+	text-decoration: wavy;
+	color: var(--color-text-white)
+}
+
+
+nav a:hover{
+	text-decoration: wavy;
+}
+
+
+picture{
+	background-color: var(--color-background-dark);
+}
+
+footer{
+	background-color: var(--color-background-dark);
+	height: 100%;
+}
+
+picture:first-of-type img{
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 32em;
+  background-size: cover;
+  transform: translate(0, -15%);
+  filter: brightness(50%);
+}
+
+/* @media (width > 44em) {
+	picture:first-of-type img{
+		left: 0;
+		top: 0;
+		background-repeat: repeat;
+		width: 100%;
+		height: 100%;
+		max-height: 32em;
+		background-size: cover;
+		transform: translate(0, -18%);
+	  }
+} */
