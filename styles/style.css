@@ -24,6 +24,8 @@
 	--color-accent:#F64137;
 	--color-button-gray:#4E4E4E;
 	--color-Black:#111;
+	/* Gradient */
+	--color-gradient: #00000099;
 }
 
 
@@ -36,34 +38,37 @@
 
 /* jouw code */
 body{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	background-color: var(--color-background-light);
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
-h1{
-	color: var(--color-Black);
+head{
+	position: relative;
 }
 
-
-h2{
- 	color: var(--color-text);
-}
 
 /* Nav bar Styling */
 nav{
-	height:70px;
+	height: 4.5em;
 	background-color: var(--color-background-dark);
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	margin: 0;
 	padding: 0 2em;
-	position: sticky;
-	top:0;
+	position:absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 }
 
 nav ul{
 	display: flex;
+	list-style-type: none;
 }
 
 
@@ -71,53 +76,95 @@ nav li{
 	padding: 0 .75em;
 }
 
+nav a{
+	color: var(--color-text-white);
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
 
 nav a:focus-visible{
-	border-style: dashed
+	border-style: dashed;
+	border: top 0	 ;
 }
 
 
-li a {
+/* nav a:hover{
 	text-decoration: wavy;
-	color: var(--color-text-white)
+} */
+
+/* Hero Banner */
+main ul{
+	position: relative;
+	display: inline;
 }
 
-
-nav a:hover{
-	text-decoration: wavy;
+main li:nth-of-type(1){
+	display: flex;
+	justify-content: flex-end;
+	background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/dumdum_2.jpg);
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	top: 2.7em;
+	right: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+/* Hero Banner content */
+main li:nth-of-type(1) h1{
+	color: var(--color-text-white);
+	text-decoration: none;
+	display:flex ;
+	justify-content: flex-start;
+	position: absolute;
+	left: 1em;
+	bottom: 1em;
 }
 
+main li:nth-of-type(1) p{
+	color: var(--color-text-white);
+	text-decoration: none;
+	display:flex ;
+	justify-content: flex-start;
+	position: absolute;
+	left: 2em;
+	bottom: 1em;
+}
 
-picture{
-	background-color: var(--color-background-dark);
+/* Image grid gallery */
+/* article{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	gap: 5em;
+} */
+
+article ul{
+	list-style-type: none;
+	display: grid;
+	grid-template-columns:	1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 1em;
+}
+
+article img{
+	overflow: hidden;
+	object-fit: cover;
+	width: max-content;
+	height: 150px;
 }
 
 footer{
+	position: absolute;
 	background-color: var(--color-background-dark);
-	height: 100%;
+	height: 7em;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
-
-picture:first-of-type img{
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 32em;
-  background-size: cover;
-  transform: translate(0, -15%);
-  filter: brightness(50%);
-}
-
-/* @media (width > 44em) {
-	picture:first-of-type img{
-		left: 0;
-		top: 0;
-		background-repeat: repeat;
-		width: 100%;
-		height: 100%;
-		max-height: 32em;
-		background-size: cover;
-		transform: translate(0, -18%);
-	  }
-} */
